@@ -7,45 +7,46 @@
 #include<unistd.h>
 #include<list>
 #include<signal.h>
+#include<sstream>
 
 namespace susu1970_process_manager{
   class Process{
-    std::string description;
     void initDescription(ProcessType pt){
       switch(pt){
       case ProcessTypeDefault:
-	description="type: default process\n";break;
+	description_init="type: default process\n";break;
       case ProcessTypeMaster:
-	description="type: master process\n";break;
+	description_init="type: master process\n";break;
       case ProcessTypeSub:
-	description="type: sub process\n";break;
+	description_init="type: sub process\n";break;
       default:
-	description="type: unknown process\n";break;
+	description_init="type: unknown process\n";break;
       }
     }
+    std::string description_init="";
+    std::list<Process *>subprocessList;
   public:
     ProcessType processType;
     pid_t pid,ppid;
-    list<Process *>subprocessList;
-    int processSubscript;//process id (the subscript in its parent's subprocessList,-1 when it is a master process),not the pid
-    std::string description(){
-      return description+"pid: "+pid+"\nppid: "+ppid+"\nprocessSubscript: "+processSubscript+"\n";      
-    }
-    Process(pid_t ppid,ProcessType pt=ProcessTypeDefault)processType:(pt),ppid:(ppid){
+    int processSubscript;//process id (the subscript in its parent's subprocessList,-1 when it is a master process),not the pid,if the previous process in its parent's subprocessList has been deleted,the processSubscript will not change
+    Process(pid_t ppid,int processSubscript,ProcessType pt=ProcessTypeDefault):processType(pt),ppid(ppid),processSubscript(processSubscript){
       initDescription(pt);
       //also start a process with processId
       
-      TODO!
+      //      TODO!
+    }
+    std::string description(){
+      return description_init+"pid: "+std::to_string(pid)+"\nppid: "+std::to_string(ppid)+"\nprocessSubscript: "+std::to_string(processSubscript)+"\n";      
     }
     void addSubprocess(short count=1,ProcessType processType=ProcessTypeSub){
       for(short i=0;i<count;++i)
-	subprocessList.push_back(new Process(pid,processType));
+	subprocessList.push_back(new Process(pid,subprocessList.size(),processType));
     }
     void deleteSubprocess(short count=1,ProcessType processType=ProcessTypeSub){
       //delete at most count number subprocesses 
       if(subprocessList.empty())return;
       if(count<0){//delete all sub-processes with type processType
-	count=subprocessVec.size();
+	count=subprocessList.size();
       }
       for(auto iter=subprocessList.begin();count>0&&iter!=subprocessList.end();--count){
 	if((*iter)->processType==processType){
@@ -55,8 +56,18 @@ namespace susu1970_process_manager{
 	  ++iter;
       }
     }
-    void deleteSubprocessWithSub(int sub){//delete sub-process by subscript 
-      for(auto iter=subprocessList.begin();count>0&&iter!=subprocessList.end();--count){
+    std::string allSubprocessesInfo(){
+      //print the description of all sub-processes in the subprocessList
+      int processCount=subprocessList.size();
+      using std::string,std::to_string;
+      string printMessage="There are "+to_string(processCount)+" sub-process"+(processCount>1?"es":"")+"\n";
+      int subprocessOrder=0;
+      for(Process*process:subprocessList)
+	printMessage+=("sub-process:"+to_string(subprocessOrder++)+"\n"+process->description()+"\n");
+      return printMessage;
+    }
+    void deleteSubprocessWithSubscript(int sub){//delete sub-process by subscript 
+      for(auto iter=subprocessList.begin();iter!=subprocessList.end();){
 	if((*iter)->processSubscript==sub){
 	  delete(*iter);//real delete operation
 	  iter=subprocessList.erase(iter);
@@ -65,9 +76,9 @@ namespace susu1970_process_manager{
       }
     }
     ~Process(){//also close the process with pid "pid"
-      TODO!
+      //      TODO!
     }
-  }
+  };
 }
 
 #endif
