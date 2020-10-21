@@ -39,4 +39,6 @@ string
 -
 sys/types.h
 -
+sys/wait.h
+-
 
