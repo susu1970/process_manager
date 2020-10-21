@@ -1,5 +1,5 @@
-#ifndef SUSU1970_PROCESS_H_
-#define SUSU1970_PROCESS_H_
+#ifndef SUSU1970_PROCESS_MANAGER_PROCESS_H_
+#define SUSU1970_PROCESS_MANAGER_PROCESS_H_
 
 #include"headers/process_type.h"
 #include<iostream>
