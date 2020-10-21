@@ -51,6 +51,12 @@ int main(int argc,char**argv){
 	}else if(prevCmdUnit=="a"){
 	  int processCount=atoi(cmdUnit.c_str());
 	  process->addSubprocess(processCount);
+	}else if(prevCmdUnit=="d"){
+	  int processCount=atoi(cmdUnit.c_str());
+	  process->deleteSubprocess(processCount);
+	}else if(prevCmdUnit=="k"){
+	  int subscript=atoi(cmdUnit.c_str());
+	  process->deleteSubprocessWithSubscript(subscript);
 	}	
       }
       prevCmdUnit=cmdUnit;
