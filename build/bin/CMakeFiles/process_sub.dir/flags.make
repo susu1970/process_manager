@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/susu1970/susu1970/zaza/practice/cpp/process_manager/src
+CXX_INCLUDES = -I/home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/src
 
 CXX_FLAGS = 
 

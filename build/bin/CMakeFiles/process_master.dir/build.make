@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/susu1970/susu1970/zaza/practice/cpp/process_manager
+CMAKE_SOURCE_DIR = /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build
+CMAKE_BINARY_DIR = /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build
 
 # Include any dependencies generated for this target.
 include bin/CMakeFiles/process_master.dir/depend.make
@@ -78,16 +78,16 @@ include bin/CMakeFiles/process_master.dir/flags.make
 
 bin/CMakeFiles/process_master.dir/process_master.cc.o: bin/CMakeFiles/process_master.dir/flags.make
 bin/CMakeFiles/process_master.dir/process_master.cc.o: ../src/process_master.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bin/CMakeFiles/process_master.dir/process_master.cc.o"
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/process_master.dir/process_master.cc.o -c /home/susu1970/susu1970/zaza/practice/cpp/process_manager/src/process_master.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bin/CMakeFiles/process_master.dir/process_master.cc.o"
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/process_master.dir/process_master.cc.o -c /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/src/process_master.cc
 
 bin/CMakeFiles/process_master.dir/process_master.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/process_master.dir/process_master.cc.i"
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/susu1970/susu1970/zaza/practice/cpp/process_manager/src/process_master.cc > CMakeFiles/process_master.dir/process_master.cc.i
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/src/process_master.cc > CMakeFiles/process_master.dir/process_master.cc.i
 
 bin/CMakeFiles/process_master.dir/process_master.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/process_master.dir/process_master.cc.s"
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/susu1970/susu1970/zaza/practice/cpp/process_manager/src/process_master.cc -o CMakeFiles/process_master.dir/process_master.cc.s
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/src/process_master.cc -o CMakeFiles/process_master.dir/process_master.cc.s
 
 # Object files for target process_master
 process_master_OBJECTS = \
@@ -99,8 +99,8 @@ process_master_EXTERNAL_OBJECTS =
 bin/process_master: bin/CMakeFiles/process_master.dir/process_master.cc.o
 bin/process_master: bin/CMakeFiles/process_master.dir/build.make
 bin/process_master: bin/CMakeFiles/process_master.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable process_master"
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/process_master.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable process_master"
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/process_master.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 bin/CMakeFiles/process_master.dir/build: bin/process_master
@@ -108,10 +108,10 @@ bin/CMakeFiles/process_master.dir/build: bin/process_master
 .PHONY : bin/CMakeFiles/process_master.dir/build
 
 bin/CMakeFiles/process_master.dir/clean:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin && $(CMAKE_COMMAND) -P CMakeFiles/process_master.dir/cmake_clean.cmake
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin && $(CMAKE_COMMAND) -P CMakeFiles/process_master.dir/cmake_clean.cmake
 .PHONY : bin/CMakeFiles/process_master.dir/clean
 
 bin/CMakeFiles/process_master.dir/depend:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/susu1970/susu1970/zaza/practice/cpp/process_manager /home/susu1970/susu1970/zaza/practice/cpp/process_manager/src /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin/CMakeFiles/process_master.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/src /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin/CMakeFiles/process_master.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bin/CMakeFiles/process_master.dir/depend
 

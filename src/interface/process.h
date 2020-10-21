@@ -33,15 +33,17 @@ namespace susu1970_process_manager{
     Process(pid_t ppid,int processSubscript,ProcessType pt=ProcessTypeDefault):processType(pt),ppid(ppid),processSubscript(processSubscript){
       initDescription(pt);
       //also start a process with processId
-      pid_t sub_pid=vfork();
-      using std::string,std::to_string;
-      if(!sub_pid){//sub-process
-	string ppid_str=to_string(ppid);
-	string processSubscript_str=to_string(processSubscript);
-	execl("./process_sub","process_sub",ppid_str.c_str(),processSubscript_str.c_str(),nullptr);
-	exit(0);
+      if(pt==ProcessTypeSub){
+	pid_t sub_pid=vfork();
+	using std::string,std::to_string;
+	if(!sub_pid){//sub-process
+	  string ppid_str=to_string(ppid);
+	  string processSubscript_str=to_string(processSubscript);
+	  execl("./process_sub","process_sub",ppid_str.c_str(),processSubscript_str.c_str(),nullptr);
+	  exit(0);
+	}
+	pid=sub_pid;	
       }
-      pid=sub_pid;
     }
     std::string description(){
       return description_init+"pid: "+std::to_string(pid)+"\nppid: "+std::to_string(ppid)+"\nprocessSubscript: "+std::to_string(processSubscript)+"\n";      
@@ -84,10 +86,12 @@ namespace susu1970_process_manager{
       }
     }
     ~Process(){//also close the process with pid "pid"
-      if(kill(pid,SIGINT)==-1)
-	std::cerr<<"kill "<<pid<<" error"<<std::endl;
-      for(Process*process:subprocessList)
-	delete process;
+      if(processType==ProcessTypeSub){
+	if(kill(pid,SIGINT)==-1)
+	  std::cerr<<"kill "<<pid<<" error"<<std::endl;
+	for(Process*process:subprocessList)
+	  delete process;	
+      }
     }
   };
 }

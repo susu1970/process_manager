@@ -1,4 +1,4 @@
-# Install script for directory: /home/susu1970/susu1970/zaza/practice/cpp/process_manager
+# Install script for directory: /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin/cmake_install.cmake")
+  include("/home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/susu1970/susu1970/zaza/practice/cpp/process_manager
+CMAKE_SOURCE_DIR = /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build
+CMAKE_BINARY_DIR = /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

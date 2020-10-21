@@ -1,4 +1,4 @@
-# Install script for directory: /home/susu1970/susu1970/zaza/practice/cpp/process_manager/src
+# Install script for directory: /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/susu1970/susu1970/zaza/practice/cpp/process_manager
+CMAKE_SOURCE_DIR = /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build
+CMAKE_BINARY_DIR = /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin//CMakeFiles/progress.marks
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles 0
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin//CMakeFiles/progress.marks
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/clean
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/preinstall
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/preinstall
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bin/CMakeFiles/process_sub.dir/rule:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/process_sub.dir/rule
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/process_sub.dir/rule
 .PHONY : bin/CMakeFiles/process_sub.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ process_sub: bin/CMakeFiles/process_sub.dir/rule
 
 # fast build rule for target.
 process_sub/fast:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_sub.dir/build.make bin/CMakeFiles/process_sub.dir/build
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_sub.dir/build.make bin/CMakeFiles/process_sub.dir/build
 .PHONY : process_sub/fast
 
 # Convenience name for target.
 bin/CMakeFiles/process_master.dir/rule:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/process_master.dir/rule
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/process_master.dir/rule
 .PHONY : bin/CMakeFiles/process_master.dir/rule
 
 # Convenience name for target.
@@ -156,7 +156,7 @@ process_master: bin/CMakeFiles/process_master.dir/rule
 
 # fast build rule for target.
 process_master/fast:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_master.dir/build.make bin/CMakeFiles/process_master.dir/build
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_master.dir/build.make bin/CMakeFiles/process_master.dir/build
 .PHONY : process_master/fast
 
 process_master.o: process_master.cc.o
@@ -165,7 +165,7 @@ process_master.o: process_master.cc.o
 
 # target to build an object file
 process_master.cc.o:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_master.dir/build.make bin/CMakeFiles/process_master.dir/process_master.cc.o
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_master.dir/build.make bin/CMakeFiles/process_master.dir/process_master.cc.o
 .PHONY : process_master.cc.o
 
 process_master.i: process_master.cc.i
@@ -174,7 +174,7 @@ process_master.i: process_master.cc.i
 
 # target to preprocess a source file
 process_master.cc.i:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_master.dir/build.make bin/CMakeFiles/process_master.dir/process_master.cc.i
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_master.dir/build.make bin/CMakeFiles/process_master.dir/process_master.cc.i
 .PHONY : process_master.cc.i
 
 process_master.s: process_master.cc.s
@@ -183,7 +183,7 @@ process_master.s: process_master.cc.s
 
 # target to generate assembly for a file
 process_master.cc.s:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_master.dir/build.make bin/CMakeFiles/process_master.dir/process_master.cc.s
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_master.dir/build.make bin/CMakeFiles/process_master.dir/process_master.cc.s
 .PHONY : process_master.cc.s
 
 process_sub.o: process_sub.cc.o
@@ -192,7 +192,7 @@ process_sub.o: process_sub.cc.o
 
 # target to build an object file
 process_sub.cc.o:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_sub.dir/build.make bin/CMakeFiles/process_sub.dir/process_sub.cc.o
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_sub.dir/build.make bin/CMakeFiles/process_sub.dir/process_sub.cc.o
 .PHONY : process_sub.cc.o
 
 process_sub.i: process_sub.cc.i
@@ -201,7 +201,7 @@ process_sub.i: process_sub.cc.i
 
 # target to preprocess a source file
 process_sub.cc.i:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_sub.dir/build.make bin/CMakeFiles/process_sub.dir/process_sub.cc.i
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_sub.dir/build.make bin/CMakeFiles/process_sub.dir/process_sub.cc.i
 .PHONY : process_sub.cc.i
 
 process_sub.s: process_sub.cc.s
@@ -210,7 +210,7 @@ process_sub.s: process_sub.cc.s
 
 # target to generate assembly for a file
 process_sub.cc.s:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_sub.dir/build.make bin/CMakeFiles/process_sub.dir/process_sub.cc.s
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/process_sub.dir/build.make bin/CMakeFiles/process_sub.dir/process_sub.cc.s
 .PHONY : process_sub.cc.s
 
 # Help Target
@@ -240,6 +240,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/susu1970/susu1970/zaza/practice/cpp/process_manager/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/susu1970/susu1970/zaza/practice/cpp/process_manager/src/process_sub.cc" "/home/susu1970/susu1970/zaza/practice/cpp/process_manager/build/bin/CMakeFiles/process_sub.dir/process_sub.cc.o"
+  "/home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/src/process_sub.cc" "/home/susu1970/mount/ntfs-3g_1/Users/ydssb/Desktop/susu1970/zaza/practice/cpp/process_manager/build/bin/CMakeFiles/process_sub.dir/process_sub.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
