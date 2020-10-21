@@ -35,7 +35,8 @@ namespace susu1970_process_manager{
       //also start a process with processId
       if(pt==ProcessTypeSub){
 	pid_t sub_pid=vfork();
-	using std::string,std::to_string;
+	using std::string;
+	using std::to_string;
 	if(!sub_pid){//sub-process
 	  string ppid_str=to_string(ppid);
 	  string processSubscript_str=to_string(processSubscript);
@@ -69,7 +70,8 @@ namespace susu1970_process_manager{
     std::string allSubprocessesInfo(){
       //print the description of all sub-processes in the subprocessList
       int processCount=subprocessList.size();
-      using std::string,std::to_string;
+      using std::string;
+      using std::to_string;
       string printMessage="There are "+to_string(processCount)+" sub-process"+(processCount>1?"es":"")+"\n";
       int subprocessOrder=0;
       for(Process*process:subprocessList)
