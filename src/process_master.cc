@@ -4,6 +4,7 @@
 #include<iostream>
 #include<string>
 #include<sys/types.h>
+#include<sys/wait.h>
 
 using namespace std;
 using susu1970_process_manager::Process;
@@ -27,9 +28,15 @@ string getCmdUnit(const string&cmd,size_t&start){
   start=next;  
   return cmd.substr(sub,next-sub);
 }
+void sig_cld(int){
+  int stat;
+  waitpid(-1,&stat,WNOHANG);
+}
 
 int main(int argc,char**argv){
   initProcess();
+  if(signal(SIGCLD,sig_cld)==SIG_ERR)
+    cerr<<"signal:sig_cld error"<<endl;
   cout<<initHintMessage<<endl;
   string cmd="";
   while(getline(cin,cmd)&&cmd!="q"){//receive the command from terminal
